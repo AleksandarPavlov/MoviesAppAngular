@@ -1,0 +1,109 @@
+<div class="movies-header">
+  <h1>Top Rated Movies</h1>
+  <a href="#">See more</a>
+</div>
+<div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card-wrapper container-sm d-flex  justify-content-around">
+        <div class="card" *ngFor = "let movie of allMovies.slice(0,5)"style="width: 16%;">
+          <img src="{{movie.image}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title two-line">{{movie.name}}</h5>
+            <div style="display: flex;">
+              <i class="fa-sharp fa-solid fa-star" style="color: #e7bc11;"></i>
+              <p>{{movie.rating}}</p>
+            </div>
+           
+          </div>
+          
+      </div>
+
+  </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-wrapper container-sm d-flex   justify-content-around">
+          <div class="card" *ngFor = "let movie of allMovies.slice(5,10)"style="width: 16%;">
+            <img src="{{movie.image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title two-line">{{movie.name}}</h5>
+              <div style="display: flex;">
+              <i class="fa-sharp fa-solid fa-star" style="color: #e7bc11;"></i>
+              <p>{{movie.rating}}</p>
+            </div>
+            </div>
+        </div>
+            
+      </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card-wrapper container-sm d-flex  justify-content-around">
+        <div class="card" style="width: 16%;">
+            <img src="https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title two-line">Shawshank Redemption</h5>
+            </div>
+          </div>
+          <div class="card" style="width: 16%;">
+            <img src="https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title two-line">Shawshank Redemption</h5>
+            </div>
+          </div>
+          <div class="card" style="width: 16%;">
+            <img src="https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title two-line">Shawshank Redemption</h5>
+            </div>
+          </div>
+          <div class="card" style="width: 16%;">
+            <img src="https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title two-line">Shawshank Redemption</h5>
+            </div>
+          </div>
+          <div class="card" style="width: 16%;">
+            <img src="https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title two-line">Shawshank Redemption</h5>
+            </div>
+          </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<hr>
+
+<div class="movies-header">
+  <h1>New Movies</h1>
+  <a href="#">See more</a>
+</div>
+<div class="card-wrapper container-sm d-flex  justify-content-around row row-cols-1 row-cols-md-3 row-cols-lg-5" id="newMoviesWrapper">
+      <div class="card" *ngFor = "let movie of allMovies"style="width: 18%;">
+        <img src="{{movie.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title two-line">{{movie.name}}</h5> 
+          <div style="display: flex;">
+          <i class="fa-sharp fa-solid fa-star" style="color:  #e7bc11;"></i>      
+          <p>{{movie.rating}}</p>  
+        </div>
+        </div>  
+      </div>
+    </div>
+
+
+
+
+
+      
+      
+ 

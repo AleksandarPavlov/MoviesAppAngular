@@ -1,0 +1,32 @@
+.main-wrapper{
+    background-color: rgb(30, 31, 33);
+    width:95%;
+    height: 100%;
+    float: right;
+
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    color: white;
+    font-size: 21px;
+    margin-top: 32px;
+    text-align: center;
+}
+h5{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    color: white;
+    font-size: clamp(0.8rem, 1.1vw, 1.5rem);
+    margin-top: 12px;
+    text-align: center;
+}
+#video{
+    display: block;
+  margin: 0 auto;
+    width:16vw;
+    height:10vw;
+    margin-top: 2.5rem;
+    max-width: 350px;
+    max-height: 220px;
+}

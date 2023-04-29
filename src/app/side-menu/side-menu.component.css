@@ -1,0 +1,36 @@
+ul{
+    width:245px;
+    margin-top: 47px;
+    display: inline-block;
+
+
+}
+li{
+
+    text-align: left;
+    height:38px;
+    margin-left: 75px;
+
+
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.55);
+
+    
+    
+}
+ h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: light;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+ }
+
+ a:hover{
+    color:rgb(216, 216, 216);
+    cursor: pointer;
+ }

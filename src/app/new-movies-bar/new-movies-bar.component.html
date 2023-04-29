@@ -1,0 +1,8 @@
+<div class="main-wrapper">
+    <h1>New Trailers</h1>
+    <div class="trailer" *ngFor="let trailer of allTrailers">
+        <iframe id="video" [src]="trailer.link" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h1>{{trailer.name}}</h1>
+    </div>
+    
+</div>

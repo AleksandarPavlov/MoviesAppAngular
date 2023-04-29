@@ -1,0 +1,43 @@
+nav{
+    height:90px;
+}
+img{
+    width: 60px;
+    margin-left: 30px;
+}
+h1{
+    color: white;
+    position: absolute;
+    font-size: 26px;
+    left:120px;
+    top:27px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+#navbarNav{
+    flex-grow: unset;
+    font-family: 'Roboto', sans-serif;
+    font-weight: light;
+}
+.navbar-nav{
+    margin-right: 30px;
+}
+.navbar-nav li{
+    padding-right: 5px;
+    height:79px;
+    margin-top: 10px;
+}
+.d-flex{
+    width:350px;
+}
+button{
+    border-color: rgb(87, 87, 87);
+}
+.navbar-nav li a{
+    margin-top: 15px;
+}
+.navbar-nav li:hover{
+    border-bottom: 2.5px solid rgb(7, 233, 184);
+    transition: 0.1s;
+}

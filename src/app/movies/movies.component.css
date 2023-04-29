@@ -1,0 +1,103 @@
+#cards-wrapper{
+    width:98%;
+    margin:auto;
+    padding-left: 3.5vw;
+    padding-top: 28px;
+    float: left;
+}
+
+.card{
+    background-color: transparent;
+    border: none;
+    color: white;
+    min-width: 100px;
+   
+}
+.card h5{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-align: left;
+    font-size: clamp(0.8rem, 1.1vw, 1.5rem);
+}
+.card-img-top{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    height: 72%; /* Adjust as needed */
+    object-fit: cover;
+}
+#carouselExampleControls{
+    margin-top: 1.9rem;
+    height:20vw;
+    max-height: 390px;
+}
+.card-body{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: clamp(0.4rem, 1.7vw, 1.5rem);
+    margin-top: 2rem;
+    margin-left: 4rem;
+    color: white;
+    display: inline-flex;
+}
+.movies-header a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: clamp(0.4rem, 1.7vw, 1rem);
+    margin-top: 2.15rem;
+    margin-right: 4rem;
+    float: right;
+    color: rgba(255, 255, 255, 0.55);
+    text-decoration: none;
+    display: inline-flex;
+}
+
+.movies-header a:hover{
+    color:rgb(216, 216, 216);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.carousel-control-prev-icon{
+    filter:none;
+    
+}
+.carousel-control-next-icon{
+    filter: none;
+}
+.carousel-control-prev{
+    width: 4%;
+}
+.carousel-control-next{
+    width: 4%;
+}
+
+.card-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+.card-body p{
+    margin-left: 0.2vw;
+    margin-top: -0.20vw;
+    font-size: clamp(0.8rem, 0.9vw, 1.5rem);
+    color: rgba(255, 255, 255, 0.55);
+    
+}
+hr{
+    color: rgb(105, 105, 105);
+}
+
+
+#newMoviesWrapper{
+    margin:auto;
+    padding-top: 30px;
+
+}
+
+i{
+    font-size: clamp(0.8rem, 0.9vw, 1.5rem);
+}
