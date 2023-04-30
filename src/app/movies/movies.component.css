@@ -101,3 +101,17 @@ hr{
 i{
     font-size: clamp(0.8rem, 0.9vw, 1.5rem);
 }
+#pagesNav{
+    margin: auto;
+}
+#pagesNav a{
+    cursor: pointer;
+}
+.pagination{
+    --bs-pagination-bg: transparent;
+    --bs-pagination-color: rgb(7, 233, 184);
+    --bs-pagination-active-bg: rgb(7, 233, 184);
+    --bs-pagination-active-border-color:rgb(255, 255, 255);
+    --bs-pagination-hover-color: rgb(7, 233, 184);
+    --bs-pagination-hover-bg: rgb(255, 255, 255);
+}

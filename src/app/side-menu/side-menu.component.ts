@@ -10,6 +10,7 @@ import { MoviesServiceService } from '../shared/movies-service.service';
 export class SideMenuComponent {
 
   allCategories!: string[]
+  showAllCategories = false;
 
   constructor(private httpClient: HttpClient, private moviesService: MoviesServiceService) { 
    
@@ -20,6 +21,10 @@ export class SideMenuComponent {
    
   }
 
+  toggleCategories() {
+    this.showAllCategories = !this.showAllCategories;
+  }
+  
   getCategories(){
     this.moviesService.getAllCategories().subscribe(
       response => {

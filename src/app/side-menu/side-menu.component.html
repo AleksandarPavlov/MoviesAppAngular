@@ -1,8 +1,14 @@
 <ul class="nav flex-column">
-    <li class="nav-item">
-      <h1  aria-current="page" >Genre</h1>
-    </li>
-    <li class="nav-item" *ngFor="let category of allCategories">
-      <a class="nav-link" >{{category}}</a>
-    </li>
-  </ul>
+  <li class="nav-item">
+    <h1 aria-current="page">Genre</h1>
+  </li>
+  <li class="nav-item" style="margin-top: -8px;" *ngIf="!showAllCategories">
+    <a class="nav-link" style ="color:  rgb(255, 255, 255);"(click)="toggleCategories()">Show More</a>
+  </li>
+  <li class="nav-item" style="margin-top: -8px;" *ngIf="showAllCategories">
+    <a class="nav-link"  style ="color:  rgb(255, 255, 255); "(click)="toggleCategories()">Show Less</a>
+  </li>
+  <li class="nav-item" *ngFor="let category of allCategories; let i = index">
+    <a class="nav-link" *ngIf="showAllCategories || i < 7">{{category}}</a>
+  </li>
+</ul>

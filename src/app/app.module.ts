@@ -10,6 +10,10 @@ import { MoviesSectionComponent } from './movies-section/movies-section.componen
 import { NewMoviesBarComponent } from './new-movies-bar/new-movies-bar.component';
 import { MoviesComponent } from './movies/movies.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
+import { TopRatedMoviesComponent } from './top-rated-movies/top-rated-movies.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { HttpClientModule } from '@angular/common/http';
     SideMenuComponent,
     MoviesSectionComponent,
     NewMoviesBarComponent,
-    MoviesComponent
+    MoviesComponent,
+    FooterComponent,
+    TopRatedMoviesComponent,
+    NotFoundComponent
+
   ],
   imports: [
     BrowserModule,

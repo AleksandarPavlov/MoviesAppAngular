@@ -13,8 +13,12 @@ export class MoviesServiceService {
 
   }
 
-  getAllMovies(){
-    return this.httpClient.get<any>(`${this.apiUrl}/movies`)
+  getTopMovies(){
+    return this.httpClient.get<any>(`${this.apiUrl}/movies/best`)
+   }
+
+  getNewestMovies(page: number){
+    return this.httpClient.get<any>(`${this.apiUrl}/movies/newest/` + page)
    }
 
   getAllCategories(){

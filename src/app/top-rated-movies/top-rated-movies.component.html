@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+<div class="main">
+   
+          <h1>Top 100 movies</h1>
+          <div class="card mb-3" *ngFor="let movie of movies; let i = index"  id="card">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="{{movie.image}}" class="img-fluid rounded-start card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">{{i+1}}. {{movie.name}} <small class="text-body-primary">({{movie.releaseDate| date: 'yyyy'}})</small></h5>
+                  <div style="display: flex;">
+                    <i class="fa-sharp fa-solid fa-star" style="color:  #e7bc11;"></i>      
+                    <p id="rating">{{movie.rating}}</p>  
+                    <p id="category">{{movie.category}}</p>
+                  </div>
+                  <p class="card-text two-line" id="description">{{movie.description}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      
+            
+</div>
+<app-footer></app-footer>
