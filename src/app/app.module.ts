@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { TopRatedMoviesComponent } from './top-rated-movies/top-rated-movies.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { MoviesByGenreComponent } from './movies-by-genre/movies-by-genre.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     MoviesComponent,
     FooterComponent,
     TopRatedMoviesComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    MoviesByGenreComponent
 
   ],
   imports: [

@@ -25,4 +25,12 @@ export class MoviesServiceService {
     return this.httpClient.get<any>(`${this.apiUrl}/movies/categories`)
    }
 
+  getTopMoviesSorted(sort: string){
+    return this.httpClient.get<any>(`${this.apiUrl}/movies/chart/top?sort=`+ sort)
+   }
+
+  getMoviesByCategory(category: string){
+    return this.httpClient.get<any>(`${this.apiUrl}/movies/genre?category=`+ category)
+   }
+
 }

@@ -9,6 +9,6 @@
     <a class="nav-link"  style ="color:  rgb(255, 255, 255); "(click)="toggleCategories()">Show Less</a>
   </li>
   <li class="nav-item" *ngFor="let category of allCategories; let i = index">
-    <a class="nav-link" *ngIf="showAllCategories || i < 7">{{category}}</a>
+    <a class="nav-link" href="genre/{{category}}"  *ngIf="showAllCategories || i < 7">{{category}}</a>
   </li>
 </ul>

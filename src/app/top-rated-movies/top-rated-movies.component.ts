@@ -26,4 +26,13 @@ export class TopRatedMoviesComponent {
         this.movies = response
       })
   }
+
+  sortList(event: Event) {
+    const value = (event.target as HTMLSelectElement).value;
+    this.moviesService.getTopMoviesSorted(value).subscribe(
+      response => {
+        this.movies = response
+      })
+  }
+  
 }

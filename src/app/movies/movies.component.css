@@ -103,6 +103,7 @@ i{
 }
 #pagesNav{
     margin: auto;
+    margin-top: 20px;
 }
 #pagesNav a{
     cursor: pointer;
